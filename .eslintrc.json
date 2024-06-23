@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": [],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+      }
+    }
+  ]
+}
