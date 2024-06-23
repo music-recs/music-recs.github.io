@@ -12,7 +12,6 @@ import {
 } from "../types/form";
 
 export const Recommendatron = () => {
-  console.log("import.meta.env", import.meta.env);
   const sdk = useSpotify(
     import.meta.env.VITE_SPOTIFY_CLIENT_ID,
     import.meta.env.VITE_SPOTIFY_REDIRECT_URI,
@@ -62,8 +61,6 @@ export const Recommendatron = () => {
     enabled: !!request && !!sdk,
     refetchOnWindowFocus: false,
   });
-
-  console.log("input", input);
 
   if (!sdk) return <Loader />;
 
